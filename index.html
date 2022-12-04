@@ -11,12 +11,17 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>養貓指南</title>
-
+  <style>
+    body {
+      background-color: #f5ebe0;
+      ;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md nav-bg fs-4 fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg nav-bg fs-4 fixed-top">
+    <div class="container-fluid">
       <a class="navbar-brand navText fs-4" href="#">
         <img src="img/cat_logo.png" class="catlogo">
         養貓指南
@@ -78,6 +83,50 @@
       你也想養貓嗎，一起來了解貓咪吧!
     </div>
   </div>
+  <div class="catNav row">
+    <div class="col-12 col-lg-6 leftdesc">
+      <div class="cat_word mb-2">新手貓奴全攻略</div>
+      <img src="img/cat_eyedown.jpg" class="cat_eyedown">
+    </div>
+    <div class="col-12 col-lg-6 rightdesc ">
+      <div class="guide_intro me-2 mt-5 fs-5 fs-lg-3">
+        新手第一次養貓該怎麼辦？需要準備哪些東西呢？可愛貓咪人人都愛，但對沒養過貓的人來說，要真的跨出成為貓奴的第一步其實並不容易，很多人都說「養貓比養狗容易」，因為不需要帶貓咪出去散步等等，但養貓仍有非常多需要了解的注意事項，以下分享給各位的「新手貓奴全攻略」。
+      </div>
+      <button class="btn btn-warning mt-4 button_word" onclick="GuidePage()">馬上了解</button>
+    </div>
+  </div>
+
+  <div class="catNav row bg-black mt-3">
+    <div class="col-12 col-lg-6 leftdesc">
+      <div class="cat_word2 mb-2">十種常見貓咪品種</div>
+      <img src="img/ten_cat.jpg" class="cat_eyedown">
+    </div>
+
+    <div class="col-12 col-lg-6 rightdesc">
+      <div class="guide_intro2 mt-5 fs-4 fs-lg-3">
+        同為想養貓咪的人類，你是否也被咪貓可愛的模樣給深深吸引呢？一起來認識十種常見的貓咪品種吧！
+      </div>
+      <button class="btn btn-info mt-4 button_word" onclick="CatPage()">馬上認識!</button>
+    </div>
+  </div>
+
+  <footer class="index_footer">
+    <div class="p-3">
+      資料來源: 
+      <a class="text-dark ms-1" style="color:#D4A373" href="https://blog.pinkoi.com/tw/lifestyle/pet/2205-keep-a-cat/#%E5%A6%82%E4%BD%95%E6%AA%A2%E8%A6%96%E8%87%AA%E5%B7%B1%E9%81%A9%E4%B8%8D%E9%81%A9%E5%90%88%E9%A4%8A%E8%B2%93">1.新手貓奴全攻略</a>
+      <a class="text-dark ms-1" href="https://www.odout.com/Article/Detail/60469?lang=zh-TW">2.十種常見貓咪品種</a>
+      <a class="text-dark ms-1" href="https://catchattw.com/">3.貓談社</a>
+    </div>
+    
+  </footer>
+  <script>
+    function GuidePage(){
+      location.href="guide.html";
+    }
+    function CatPage(){
+      location.href="cat.html";
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

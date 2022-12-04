@@ -27,7 +27,7 @@ body{
 
 #sleepCat{
     width: 100%;
-    height: 760px
+    height: 760px;
 }
 .catPic{
     position: relative;
@@ -83,4 +83,81 @@ a:visited{
 .photo{
     width: auto;
     height: auto;
+}
+
+.siberian_cat{
+    width: 800px;
+    height: 800px;
+}
+
+.catNav{
+    background-color: #f5ebe0;
+    height: 800px;
+}
+
+.cat_eyedown{
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+}
+
+.cat_word{
+    color: #624A25;
+    font-size: 40px;
+    font-weight: bold;
+}
+.cat_word2{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.leftdesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightdesc{
+    padding-left: 30px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightdesc2{
+    padding-left: 50px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.guide_intro{
+    color: #624A25;
+    font-size: 31px;
+}
+
+.guide_intro2{
+    color: white;
+    font-size: 31px;
+}
+
+.button_word{
+    font-weight: bold;
+}
+
+.button_word2{
+    color: black;
+    font-weight: bold;
+}
+
+.index_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5ebe0;
+    color: black;
 }
