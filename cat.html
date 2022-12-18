@@ -8,13 +8,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="carousel.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>養貓指南</title>
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .cat {
+      width: 100%;
+      height: auto;
+    }
+
+    .info {
+      height: 500px;
+      padding-top: 0px;
+
+      padding-bottom: 0px;
+    }
+
+    .info>div {
+      padding: 10px;
+
+    }
+
+    .qq {
+      height: 170px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md nav-bg fs-4 sticky-top">
+    <nav class="navbar navbar-expand-md nav-bg fs-4 fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand navText fs-4" href="#">
           <img src="img/cat_logo.png" class="catlogo">
@@ -28,7 +56,7 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active navText" aria-current="page" href="#">首頁</a>
+              <a class="nav-link active navText" aria-current="page" href="index.html">首頁</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navText" aria-current="page" href="proposal.html">網站企劃書</a>
@@ -39,33 +67,20 @@
                 貓咪
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">曼赤肯短腿貓</a></li>
-                <li><a class="dropdown-item" href="#">摺耳貓</a></li>
-                <li><a class="dropdown-item" href="#">美國短毛貓</a></li>
-                <li><a class="dropdown-item" href="#">英國短毛貓</a></li>
-                <li><a class="dropdown-item" href="#">金吉拉</a></li>
-                <li><a class="dropdown-item" href="#">黑貓</a></li>
-                <li><a class="dropdown-item" href="#">橘貓</a></li>
-                <li><a class="dropdown-item" href="#">虎斑貓</a></li>
-                <li><a class="dropdown-item" href="#">三花貓</a></li>
+                <li><a class="dropdown-item" href="#">貓咪總覽</a></li>
+                <li><a class="dropdown-item" href="persia_cat.html">波斯貓</a></li>
+                <li><a class="dropdown-item" href="gold.html">金吉拉</a></li>
+                <li><a class="dropdown-item" href="america_short.html">美國短毛貓</a></li>
+                <li><a class="dropdown-item" href="munchkin.html">曼赤肯</a></li>
+                <li><a class="dropdown-item" href="maine.html">緬因貓</a></li>
+                <li><a class="dropdown-item" href="norway.html">挪威森林貓</a></li>
+                <li><a class="dropdown-item" href="siamese.html">暹羅貓</a></li>
+                <li><a class="dropdown-item" href="doll.html">布偶貓</a></li>
+                <li><a class="dropdown-item" href="leopard.html">豹貓</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle navText" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                養貓須知
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">重要物品</a></li>
-                <li><a class="dropdown-item" href="#">環境</a></li>
-                <li><a class="dropdown-item" href="#">運動</a></li>
-                <li><a class="dropdown-item" href="#">餵食</a></li>
-                <li><a class="dropdown-item" href="#">整理毛髮</a></li>
-                <li><a class="dropdown-item" href="#">牙齒</a></li>
-                <li><a class="dropdown-item" href="#">健康</a></li>
-                <li><a class="dropdown-item" href="#">訓練</a></li>
-                <li><a class="dropdown-item" href="#">寵物保險</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link navText" aria-current="page" href="guide.html">養貓須知</a>
             </li>
           </ul>
         </div>
@@ -73,33 +88,178 @@
     </nav>
   </header>
   <main>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/sleep_cat.jpg" class="d-block w-100" alt="..." style="height: 700px">
+          <img src="img/white_cat.webp" class="cat">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>土耳其安哥拉貓</h1>
+              <!-- <p><a class="btn btn-lg btn-warning" href="#">馬上了解</a></p> -->
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
+          <img src="img/america_cat.webp" class="cat">
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>美國短尾貓</h1>
+              <!-- <p><a class="btn btn-lg btn-warning" href="#">馬上了解</a></p> -->
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
+          <img src="img/bomila.webp" class="cat">
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>波米拉</h1>
+              <!-- <p><a class="btn btn-lg btn-warning" href="#">馬上了解</a></p> -->
+            </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <div class="container-fluid marketing">
+      <div class="row">
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/Persia_cat.jfif" style="border-radius: 50%; width: 150px;height: 150px;">
+
+            <h2 class="fw-normal mt-2">波斯貓</h2>
+            <p class="qq">波斯貓緣起於波斯（就是現在的伊朗），品種歷史古老，其特色就是像被鍋子打到的凹臉與一身漂亮蓬鬆的長毛，
+
+              有著「貓咪國王」的美譽，是從加菲貓培育而來的，可說是長毛版的加菲貓！有著「貓咪國王」的美譽，是從加菲貓培育而來的，可說是長毛版的加菲貓！</p>
+            <p><a class="btn btn-warning" href="persia_cat.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/gold.jfif" style="border-radius: 50%; width: 150px; height: 150px;">
+
+            <h2 class="fw-normal mt-2">金吉拉</h2>
+            <p class="qq">
+              金吉拉為波斯的分支，其特徵就是臉比較不像被鍋子打到的樣子，有著黑眼線與一身長毛。很多人說金吉拉個性溫和友善，但有和金吉拉相處過的鏟屎官們，一定會覺得這其中有什麼誤會，身邊的金吉拉都應該改名金派拉！</p>
+            <p><a class="btn btn-warning" href="gold.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/a_short.jfif" style="border-radius: 50%; width: 150px; height: 150px;">
+
+            <h2 class="fw-normal mt-2">美國短毛貓</h2>
+            <p class="qq">美短跟英短系出同源，都是歐洲短毛貓類別，顧名思義就是原產美國貓，跟著早期移民一起到歐洲的！
+              他們最吸引人的，就是圓圓大頭與嘴邊肉，組成超可愛的一張娃娃臉！</p>
+            <p><a class="btn btn-warning" href="america_short.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/shot_leg.jfif" style="border-radius: 50%; width: 150px;height: 150px;">
+
+            <h2 class="fw-normal mt-2">曼赤肯</h2>
+            <p class="qq">曼赤肯另一廣為人知的名字就是「短腿貓」，是基因異變後的品種。
+
+              但不少人覺得短腿其實是軟骨異變造成，對貓未來健康影響很大，使得品種爭議一直存在。
+
+              在此我們也不去爭論誰對誰錯，大家只要記得，好好善待貓咪就是對他們最好的照顧！</p>
+            <p><a class="btn btn-warning" href="munchkin.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/big_cat.jfif" style="border-radius: 50%; width: 150px; height: 150px;">
+
+            <h2 class="fw-normal mt-2">緬因貓</h2>
+            <p class="qq">緬因貓是「貓界中的小巨人」，是北美洲自然產生最早的長毛貓，也是美國貓種中數量最多的品種。
+
+              巨大的體型與厚實的長毛，較不適合終年高溫的台灣！
+
+              此外，長毛要時常打理，在照顧上需要花費比其他貓更多的時間與心力！</p>
+            <p><a class="btn btn-warning" href="maine.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/Norway.jfif" style="border-radius: 50%; width: 150px; height: 150px;">
+
+            <h2 class="fw-normal mt-2">挪威森林貓</h2>
+            <p class="qq">挪威森林貓跟緬因貓很像，都是貓界巨人體型，毛髮也一樣厚實有感，抱起來很有份量！
+
+              但兩者還是有不同之處！挪威森林貓的頭型較像三角形，正面看是倒等邊三角形，側面從眉心至鼻尖則有凹凹的弧度！
+
+              此外，挪威森林貓的耳朵是沒有耳脊毛的唷！</p>
+            <p><a class="btn btn-warning" href="norway.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/god_like.jfif" style="border-radius: 50%; width: 150px;height: 150px;">
+
+            <h2 class="fw-normal mt-2">暹羅貓</h2>
+            <p class="qq">暹羅貓是很早被承認的東方短毛貓品種之一，尤其在泰國當地有非常多的暹羅貓！
+
+              他們屬於重點色貓，臉部與四肢的毛色比身體深。
+
+              最重要是他們內建變色系統，在寒冷的時候，暹羅貓就會變身烤焦麵包，實在非常可愛，一貓兩種LOOK阿</p>
+            <p><a class="btn btn-warning" href="siamese.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/doll.jpg" style="border-radius: 50%; width: 150px; height: 150px;">
+
+            <h2 class="fw-normal mt-2">布偶貓</h2>
+            <p class="qq">布偶貓雖然沒有挪威森林貓與緬因貓大，但比起其他貓種算是偏大型了。
+
+              一身漂亮柔軟又很鬆的長毛，加上無辜的小眼神跟漂亮的重點色分布，擄獲許多貓奴的心啊！
+
+              不過那一身皮草並不好照顧，需要貓奴們多多費心養護。</p>
+            <p><a class="btn btn-warning" href="doll.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-lg-4 info">
+          <div>
+            <img src="img/bow.jfif" style="border-radius: 50%; width: 150px;height: 150px;">
+
+            <h2 class="fw-normal mt-2">豹貓</h2>
+            <p class="qq">豹貓可說是有馴化過的小老虎…..阿不是，是很漂亮的大貓咪。
+
+              亮麗的外表總是吸引大家的目光，不過飼養需求度也相對較高，因天性關係，需要相當大的活動空間與活動量，破壞力不亞於二哈！
+
+              在飼養前一定要先做好相關的功課。</p>
+            <p><a class="btn btn-warning" href="leopard.html">馬上了解 &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+
   </main>
+  <footer class="index_footer" style="background-color:white">
+    <div class="p-3">
+      資料來源: 
+      <a class="text-dark ms-1" href="https://www.odout.com/Article/Detail/60469?lang=zh-TW" target="_blank">1.十種常見貓咪品種</a>
+      <a class="text-dark ms-1" href="https://www.royalcanin.com/tw/cats/breeds" target="_blank">2.了解貓咪品種</a>
+    </div>
+    
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
